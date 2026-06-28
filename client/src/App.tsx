@@ -30,6 +30,10 @@ import SplashScreen from "./pages/SplashScreen";
 function SplashRedirect() {
   const [location, navigate] = useLocation();
   useEffect(() => {
+    if (import.meta.env.BASE_URL !== "/") {
+      return;
+    }
+
     // Only redirect when landing on root path and splash hasn't been seen yet
     if (location === "/" && !sessionStorage.getItem("splash_seen")) {
       navigate("/splash", { replace: true });
