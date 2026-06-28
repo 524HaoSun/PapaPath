@@ -83,7 +83,7 @@ export default function SidebarNav() {
             className="text-sm font-bold leading-tight"
             style={{ color: "oklch(0.22 0.04 240)", fontFamily: "'DM Serif Display', serif" }}
           >
-            DadCompanion
+            PapaPath
           </div>
           <div className="text-[10px]" style={{ color: "oklch(0.60 0.03 240)" }}>
             AI Pregnancy Guide

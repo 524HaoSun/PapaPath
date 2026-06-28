@@ -6,17 +6,33 @@ import superjson from "superjson";
 import App from "./App";
 import "./index.css";
 
-const queryClient = new QueryClient();
+const isStaticGitHubPages = import.meta.env.BASE_URL !== "/";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: isStaticGitHubPages ? false : 3,
+    },
+  },
+});
 
 // Demo mode: log errors but never redirect to login
 queryClient.getQueryCache().subscribe(event => {
   if (event.type === "updated" && event.action.type === "error") {
+    if (isStaticGitHubPages) {
+      return;
+    }
+
     console.error("[API Query Error]", event.query.state.error);
   }
 });
 
 queryClient.getMutationCache().subscribe(event => {
   if (event.type === "updated" && event.action.type === "error") {
+    if (isStaticGitHubPages) {
+      return;
+    }
+
     console.error("[API Mutation Error]", event.mutation.state.error);
   }
 });

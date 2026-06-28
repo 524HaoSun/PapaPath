@@ -434,7 +434,7 @@ export default function MedicalCardModal({ onClose }: MedicalCardModalProps) {
               <div className="flex items-center gap-1">
                 <Heart size={9} fill="#E8804A" style={{ color: "#E8804A" }} />
                 <span className="text-[9px] font-medium" style={{ color: "#C08060" }}>
-                  DadCompanion · Prenatal Care
+                  PapaPath · Prenatal Care
                 </span>
               </div>
               <span className="text-[9px] font-mono" style={{ color: "#C08060" }}>
