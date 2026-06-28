@@ -1,0 +1,25 @@
+# Project TODO — niuniu-main (Dad Pregnancy Companion / PapaPath)
+
+- [x] Restore project from niuniu-main.zip
+- [x] Sync all pages, components, lib, hooks, contexts from original project
+- [x] Sync server routers directory
+- [x] Add mimoApiUrl and mimoApiKey to env.ts
+- [x] Install missing npm packages: qrcode.react, canvas-confetti
+- [x] Generate 24 AI images (couple, avatars, heroes, articles, banners, illustrations)
+- [x] Upload all 24 images to manus-storage via manus-upload-file --webdev
+- [x] Update communityData.ts with new /manus-storage/ paths (19 images)
+- [x] Update SplashScreen.tsx with new /manus-storage/ paths (5 images)
+- [x] Verify dev server runs without errors
+- [x] Replace AI-generated images with original images from dadpregcomp-yghqkdd9.manus.space
+- [x] Translate all Chinese text to English, remove MiMo brand from UI
+- [x] Simplify SplashScreen (remove 4 feature cards)
+- [x] Fix database tables (create missing pregnancies, mom_logs, etc.)
+- [x] Add favicon and apple-touch-icon
+- [x] Configure MIMO_API_KEY
+- [x] Create demo user context so all pages work without login
+- [x] Remove login walls from all pages (MumMonitor, Settings, MomStatus, etc.)
+- [x] Update Medical/CareContext data to London NHS hospitals and 999/111 emergency numbers
+- [x] Add report detail page (currently shows "coming soon" toast)
+- [x] Verify all pages accessible without login
+- [x] Mobile layout fixes: BottomNav labels (shortened + whitespace-nowrap), Header Medical Card button responsive, HeroWeekCard footer truncate, MumMonitor tabs (full-width, shorter labels), metric card labels shortened, form field labels shortened, CareHospital emergency contacts compact, appointment card truncate, Consultation Interpreter bottom strip flex-wrap, DadCommunity tab switcher labels shortened, PostCard author row flex-wrap with tag moved inline, quick-post buttons xs-responsive
+- [x] PostDetail page: clickable forum posts → full detail page with complete content, comment list, like/save/reply interactions, sticky comment input bar, share button
